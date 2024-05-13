@@ -1,0 +1,195 @@
+/* General text alignment for RTL */
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700; /* Bold for headings */
+}
+
+/* Reverse floating elements */
+.float-left {
+    float: right !important;
+}
+
+.float-right {
+    float: left !important;
+}
+
+/* Adjust the text alignment for headings and links */
+.navbar-nav, .dropdown-menu {
+    text-align: right;
+}
+
+/* Specific adjustments for navigation */
+.navbar {
+    direction: rtl;
+}
+
+/* Invert margin and padding that are direction specific */
+*[class*="ml-"], .ml-auto {
+    margin-right: var(--bs-gutter-x, .75rem) !important;
+    margin-left: auto !important;
+}
+
+*[class*="mr-"], .mr-auto {
+    margin-left: var(--bs-gutter-x, .75rem) !important;
+    margin-right: auto !important;
+}
+
+/* Icon adjustments, if any icons need flipping */
+.icon-left {
+    transform: scaleX(-1);
+}
+
+.icon-right {
+    transform: scaleX(1);
+}
+
+/* Carousel controls */
+.carousel-control-prev {
+    right: auto;
+    left: 0;
+}
+
+.carousel-control-next {
+    left: auto;
+    right: 0;
+}
+
+/* Adjust background positions if necessary */
+.background-left {
+    background-position: right center;
+}
+
+.background-right {
+    background-position: left center;
+}
+
+.ltr-section {
+    direction: ltr;
+    text-align: left;
+}
+
+.ltr-section .navbar, .ltr-section .dropdown-menu {
+    text-align: left;
+}
+
+.ltr-section .form-control {
+    text-align: left;
+}
+
+/* Ensure icons and text inside links are properly aligned */
+.ltr-section a {
+    direction: ltr;
+    text-align: left;
+}
+
+/* Specific adjustments for floating and icon transformation in LTR context */
+.ltr-section .float-right {
+    float: right !important;
+}
+
+.ltr-section .float-left {
+    float: left !important;
+}
+
+.ltr-section .icon-left {
+    transform: scaleX(1);
+}
+
+.ltr-section .icon-right {
+    transform: scaleX(-1);
+}
+
+#header .logo {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right; /* Ensures text inside the logo, if any, aligns right */
+}
+
+#header .logo img {
+    max-height: 60px; /* Adjust size as necessary */
+}
+
+#header .navbar {
+    padding-right: 600px; /* Add padding to the right of the navbar */
+}
+
+.ltr-text {
+    direction: ltr; /* Sets text direction to left-to-right */
+    unicode-bidi: bidi-override; /* Ensures that the direction is applied regardless of surrounding text */
+    text-align: left; /* Aligns the text to the left, which is natural for LTR text */
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero .simple-slider {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Ensures the slider has a fixed height */
+    overflow: hidden; /* Adds this to ensure no overflow from slides */
+}
+
+#hero .slider-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+ 
+#hero .slide {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+  
+#hero .slide.active {
+    display: flex;
+    align-items: center; /* Aligns content vertically center */
+    justify-content: center; /* Aligns content horizontally center */
+}
+
+#hero .slide-content {
+    text-align: center; /* Centers the text horizontally */
+    width: 100%; /* Ensures the content uses the full width of the slide */
+    color: white; /* Adjust color as needed */
+    padding: 30px; /* Provides padding around the text */
+    background: rgba(45, 103, 80, 0.8);
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+/* Right to Left Text Alignment */
+#hero .slide-content {
+    direction: rtl; /* Right-to-left text direction */
+}
+  
+#hero .slide-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px;
+    z-index: 100;
+}
+
+#hero .slide-control.left {
+    right: 10px;
+}
+
+#hero .slide-control.right {
+    left: 10px;
+}
+  
+
+
+
+
