@@ -1,4 +1,4 @@
-### Bashair Al-Khair for Orphans and Patients
+# Bashair Al-Khair for Orphans and Patients
 Welcome to Bashair Al-Khair for Orphans and Patients, a charity association dedicated to providing care and support for orphans and patients in need. This landing page is developed using HTML, CSS, JavaScript, and Bootstrap to showcase our services, introduce our team, and provide contact information.
 
 About Us
